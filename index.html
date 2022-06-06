@@ -36,21 +36,24 @@
                 </div>
             </div>
             <ul class ="thumb">
-                <li><img src="images/ms3.png" style="transform: rotate(340deg);" onclick="imgSlider('images/ms3.png');changeCircleColor('#ecb481')"></li>
-                <li><img src="images/ms4.png" style="transform: rotate(20deg);" onclick="imgSlider('images/ms4.png');changeCircleColor('#D77186')"></li>
-                <li><img src="images/ms5.png" style="transform: rotate(340deg);" onclick="imgSlider('images/ms5.png');changeCircleColor('##D4B1A7')"></li>
+                <li><img src="images/ms3.png" style="transform: rotate(340deg);"
+                     onclick="imgSlider('images/image3.png');
+                     changeCircleColor('#ecb481')"></li>
+                <li><img src="images/ms4.png" style="transform: rotate(20deg);" onclick="imgSlider('images/image4.png');changeCircleColor('#D77186')"></li>
+                <li><img src="images/ms5.png" style="transform: rotate(340deg);" onclick="imgSlider('images/image5.png');changeCircleColor('#D4B1A7')"></li>
             </ul>
         </section>
 
         <script type ="text/javascript">
-            function imgSlider(anything){
-                document.querySelector(".img").src = anything;
+            function imgSlider(images){
+                document.querySelector(".img").src = images;
             }
 
             function changeCircleColor(color){
                 const circle = document.querySelector(".circle");
                 circle.style.background = color;
             }
+
         </script>
     </body>
 
