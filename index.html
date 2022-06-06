@@ -5,13 +5,17 @@
         <meta charset ="UTF-8">
         <title> Coffee Shop </title>
         <link rel ="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Caveat&family=Crimson+Pro:wght@600&family=Roboto:wght@400;500&family=Signika+Negative:wght@400;500&display=swap"
+ rel="stylesheet">
     </head>
 
     <body>
         <section>
             <div class ="circle"></div>
             <header>
-                <a href = "" ><img src ="images/logo.jpg" class="logo"></a>
+                <a href = "" ><img src ="images/logo.png" class="logo"></a>
                 <ul>
                     <li><a href =""> Home </a></li>
                     <li><a href =""> Menu </a></li>
@@ -21,28 +25,33 @@
             </header>
             <div class ="content">
                 <div class ="text">
-                    <h2>Did someone say Milkshakes? <br> Or was it <span> Pop's Chock'lit Shoppe </span></h2>
-                    <p> Presenting to you, from our very own Archie Comics our favourtte POPS CHCOLITTE CAFFE!
-                        Lets not let some evil guy get in out way!
+                    <h2>Did someone say Milkshakes? <br> </h2>
+                    <p> Presenting to you, from our very own <em>Archie Comics</em> our favourite <span>Pop's Chock'lit Shoppe </span>
+                        <br> Lets not let some evil guy get in our way to some delicious milkshakes!
                     </p>
                     <a href=""> Learn More</a>
                 </div>
-                   
                 <div class="imgBox">
-                    <img src ="images/logo.jpg" class ="img">
+                    <img src ="images/ms3.png" class ="img">
                 </div>
             </div>
-         
             <ul class ="thumb">
-                <li><img src=""></li>
-                <li><img src=""></li>
-                <li><img src=""></li>
+                <li><img src="images/ms3.png" style="transform: rotate(340deg);" onclick="imgSlider('images/ms3.png');changeCircleColor('#ecb481')"></li>
+                <li><img src="images/ms4.png" style="transform: rotate(20deg);" onclick="imgSlider('images/ms4.png');changeCircleColor('#D77186')"></li>
+                <li><img src="images/ms5.png" style="transform: rotate(340deg);" onclick="imgSlider('images/ms5.png');changeCircleColor('##D4B1A7')"></li>
             </ul>
-
-
-
-
         </section>
+
+        <script type ="text/javascript">
+            function imgSlider(anything){
+                document.querySelector(".img").src = anything;
+            }
+
+            function changeCircleColor(color){
+                const circle = document.querySelector(".circle");
+                circle.style.background = color;
+            }
+        </script>
     </body>
 
 </html>
